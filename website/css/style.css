@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap');
+body{
+    background: #fffff8;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #83A4AD;
+}
+.mainContainer{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    /* width: 100%; */
+}
+.mainContainer h1 ,.weatherData h1{
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    font-size: 3rem
+}
+.formContainer{
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 80%;
+    
+}
+.formContainer h2{
+    color: gray;
+    font-family: 'Cairo', sans-serif;
+}
+.formContainer #inputs input{
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid gray;
+    color: gray;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.formContainer textarea{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    border: 3px solid gray;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: gray;
+    padding: 20px;
+    resize: none;
+    width: 100%;
+}
+#locationSelector{
+    outline: none;
+    border: none;
+    color: white;
+    background-color:rgb(66, 107, 119);
+    padding: 10px;
+    font-size: 20px
+}
+#automaticGeneration{
+    outline: none;
+    border: none;
+    padding: 20px;
+    width: 82%;
+    font-size: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(66, 107, 119);
+    transition: 0.1s all ease-in-out;
+}
+#automaticGeneration:hover{
+    color: gray;
+    background-color: white
+}
+.formGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding-right: 20px
+}
+.formContainer button{
+    outline: none;
+    border: none;
+    color: white;
+    background-color: rgb(66, 107, 119);
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+.formContainer label{
+    color: gray;
+}
+.formContainer button:hover{
+    background-color:rgb(98, 126, 135);
+}
+.weatherData{
+    padding: 30px;
+    display: none;
+    height: 100vh
+}
+.weathergrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.weatherChild{
+    background-color: white;
+    border-radius: 30px;
+    padding: 50px
+}
+.weatherChild h3{
+    font-size: 30px;
+    color: gray;
+    font-family: 'Cairo', sans-serif;
+}
+.weatherChild p{
+    font-size: 30px
+}
+#countryName{
+    display: none;
+}
