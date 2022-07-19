@@ -9,7 +9,7 @@ Web Application based on Node JS used to view the temperature depending on the l
 
 ## Demo-Preview
 [(Back to top)](#table-of-contents)
-![Landing Page](landing.png)
+![Landing Page](home.png)
 
 ## Description
 [(Back to top)](#table-of-contents)
